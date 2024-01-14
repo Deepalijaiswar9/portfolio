@@ -1,0 +1,97 @@
+/* header start here===================== */
+
+header{
+    background-color: #381111ee;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .wrapper,
+header .wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .wrapper nav{
+    width: 50%;
+}
+header .wrapper nav a{
+    padding-bottom: 5px;
+}
+header .wrapper nav a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+
+/* mobile menu=========== */
+.mobileNavBtn{
+    display: none;
+    cursor: pointer;
+}
+
+.mobileNavIcon{
+    font-size: 30px;
+    color: #fff;
+}
+
+.mobileNavIcon[name="close"]{
+    display: none;
+}
+/* header end here===================== */
+
+/* responsive start here========================= */
+
+@media screen and (max-width: 768px) {
+/* header{
+    position: relative;
+} */
+
+    .mobileNavBtn{
+        display: block;
+    }
+
+    .navbar{
+        /* display: none; */
+        width: 100% !important;
+        height: 100vh;
+        background-color: #381111ee;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        height: 50vh;
+
+    }
+
+    .active .navbar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobileNavIcon[name="close"]{
+        display: block;
+    }
+
+    .active .mobileNavIcon[name="menu"]{
+        display: none;
+    }
+}
+
+/* responsive end here========================= */

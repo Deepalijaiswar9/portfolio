@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepali Jaiswar - Web Developer</title>
+
+  <!-- slick slider css link======================== -->
+  <link rel="stylesheet" type="text/css" href="./assests/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./assests/slick/slick-theme.css" />
+  <!-- font awesome css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css link======================= -->
+  <link rel="stylesheet" href="./assests/css/header.css">
+  <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="wrapper">
+        <h1>
+          <a href="#" title="Deepali Portfolio" target="_blank" id="logo">
+            Deepali Jaiswar
+          </a>
+        </h1>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="index.html" target="_self" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="#aboutMe" target="_self" title="About Me">About Me</a>
+            </li>
+            <li>
+              <a href="#education" target="_self" title="Education">Education</a>
+            </li>
+            <li>
+              <a href="#experience" target="_self" title="Experience">Experience</a>
+            </li>
+            <li>
+              <a href="#project" target="_self" title="Project">Project</a>
+            </li>
+            <!-- <li>
+              <a href="#myBlog" target="_self" title="My Blog">My Blog</a>
+            </li> -->
+            <li>
+              <a href="#contactMe" target="_self" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobileNavBtn">
+          <ion-icon name="menu" class="mobileNavIcon"></ion-icon>
+          <ion-icon name="close" class="mobileNavIcon"></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- banner section start here======= -->
+      <section class="banner">
+        <div class="wrapper">
+          <div class="bannerText">
+            <span>Welcome to my website</span>
+            <h2>Hello, I am <span class="bannerTextChange"></span> based in Mumbai.</h2>
+            <div class="bannerBtn">
+              <a href="#contactMe" title="Hire Me">Hire Me</a>
+              <a href="#project" title="My Works">My Works</a>
+              <a href="./assests/pdf/Deepali Jaiswar.pdf" title="Download CV">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end here======= -->
+
+      <!-- about me section start here========================== -->
+
+      <section class="aboutMe" id="aboutMe">
+        <div class="wrapper">
+          <div class="aboutHeading">
+            <h3>About Me</h3>
+            <p>Hello, I am Deepali Jaiswar, a passionate and detail-oriented web developer based in Mumbai. With a
+              background in Bachelor in Computer Science, I specialize in creating dynamic and user-friendly websites.
+              <!-- </p>
+            <p> -->
+              I thrive on turning innovative ideas into tangible digital solutions. My expertise lies in Front-end
+              Development and I am proficient in languages such as HTML, CSS, JavaScript.
+            </p>
+            <p> My Skills: Front-end: HTML, CSS, JavaScript. Tools: Git, VS Code.</p>
+          </div>
+          <div class="aboutDetails">
+            <div class="profile">
+              <h4>Profile</h4>
+              <div class="profileImage">
+                <figure>
+                  <img src="./assests/images/Deepali.jpg" alt="Deepali" id="deepaliImage">
+                </figure>
+                <div>
+                  <p>
+                    <span>Name:</span> Deepali Jaiswar
+                  </p>
+                  <p>
+                    <span>Profile:</span> Web Developer
+                  </p>
+                  <p>
+                    <span>Birthday:</span> 16 October 2000
+                  </p>
+                  <p>
+                    <span>Address:</span> Vashinaka Kurla(e) Mumbai
+                  </p>
+                  <p>
+                    <span>Email:</span> <a href="mailto:deepalijaiswar00@gmail.com" target="_blank"
+                      title="mail">deepalijaiswar00@gmail.com</a>
+                  </p>
+                  <p>
+                    <span>Phone:</span> <a href="tel:+919076192665" target="_blank" title="Call">+91 9076192665</a>
+                  </p>
+                  <p>
+                    <span>GitHub:</span> <a href="https://github.com/Deepalijaiswar9" target="_blank"
+                      title="Git">https://github.com/Deepalijaiswar9</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="skills">
+              <h4>Skills</h4>
+              <label>HTML:</label>
+              <progress id="html" value="90" max="100"></progress>
+
+              <label>CSS:</label>
+              <progress id="css" value="85" max="100"></progress>
+
+              <label>Javascript:</label>
+              <progress id="js" value="30" max="100"></progress>
+
+              <label>inDesign:</label>
+              <progress id="inDesign" value="80" max="100"></progress>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me section end here========================== -->
+
+
+      <!-- education section start here========================== -->
+
+      <section class="education" id="education">
+        <div class="wrapper">
+          <div class="educationHeading">
+            <h3>Education</h3>
+            <p>I hold a degree in Bachelor in Computer Science from Mumbai University. Additionally, I have completed
+              Udemy and coursera Courses to continually enhance my skills and stay current in the rapidly changing tech
+              landscape.</p>
+          </div>
+          <div class="educationDetails" id="educationDetails"></div>
+        </div>
+      </section>
+
+      <!-- education section end here========================== -->
+
+      <!-- experience section start here=============================== -->
+
+      <section class="experience" id="experience">
+        <div class="wrapper">
+          <div class="experienceHeading">
+            <h3>Experience</h3>
+            <p>In my previous roles at <a href="https://infocast.in/" target="_blank"
+                title="Infocast System Private Limited">Infocast System Private Limited</a>, I successfully
+              Developed and maintained responsive websites from concept to deployment.
+              Collaborated with cross-functional teams, including designers and UX/UI specialists, to implement visually
+              appealing and user-friendly interfaces.
+              Utilized HTML, CSS, and JavaScript to create dynamic and interactive web pages.
+              Ensured websites were optimized for performance, accessibility, and search engine visibility.
+              Conducted code reviews and provided constructive feedback to team members.
+              Collaborated with clients to gather requirements, provide project updates, and address feedback.
+              These experiences have equipped me with a solid foundation in front-end development technologies such as
+              HTML, CSS, and JavaScript, and have a strong understanding of version control systems like
+              <a href="https://github.com/Deepalijaiswar9" target="_blank" title="github link">Git</a>.
+            </p>
+          </div>
+          <div class="experienceDetails">
+            <div class="infocastCompany">
+              <figure>
+                <a href="https://infocast.in" title="Infocast Systems Pvt Ltd" target="_blank">
+                  <img src="./assests/images/infocastLogo.jpg" alt="infocastLogo" id="infocastLogo">
+                </a>
+                <figcaption>
+                  <a href="https://infocast.in" title="Infocast Systems Pvt Ltd" target="_blank">
+                    <h5>Infocast Systems Private Limited</h5>
+                  </a>
+                  <p>Key contributor to the development of Infocast Systems, a comprehensive information broadcasting
+                    platform
+                    using ASP.NET and C#. Designed and implemented dynamic and user-friendly interfaces using HTML, CSS,
+                    and JavaScript. Successfully delivered a robust and feature-rich InfoCast platform, contributing to
+                    improved information dissemination and user satisfaction.</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="https://imprint-magazine.in/" title="imprint Magazine" target="_blank">
+                  <img src="./assests/images/imprintLogo.jpg" alt="imprintLogo" id="imprintLogo">
+                </a>
+                <figcaption>
+                  <a href="https://imprint-magazine.in/" title="imprint Magazine" target="_blank">
+                    <h5>Imprint Magazine</h5>
+                  </a>
+                  <p>
+                    Conceptualized, designed, and developed the Imprint Magazine website from the ground up.
+                    Implemented a modern and responsive design using HTML, CSS, and JavaScript to enhance user
+                    experience. Successfully launched the Imprint Magazine website, providing an immersive and
+                    visually appealing online platform for readers.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="http://www.swarashreemusic.in/" title="Swarashree Enterprises Private Limited" target="_blank">
+                  <img src="./assests/images/swarashreeLogo.jpg" alt="swarashreeLogo" id="swarashreeLogo">
+                </a>
+                <figcaption>
+                  <a href="http://www.swarashreemusic.in/" title="Swarashree Enterprises Private Limited"
+                    target="_blank">
+                    <h5>Swarashree Enterprises Private Limited</h5>
+                  </a>
+                  <p>Conceived, designed, and developed the Swarashree Music website from the ground up, providing a
+                    digital platform for music enthusiasts. Implemented a visually appealing and user-friendly interface
+                    using HTML, CSS, and JavaScript to
+                    enhance the overall user experience. Successfully launched the Swarashree Music website, providing a
+                    digital hub for music
+                    lovers and promoting cultural engagement through the power of technology.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="https://www.envoymarketing.in/" title="Envoy Marketing and Distributors" target="_blank">
+                  <img src="./assests/images/envoyLogo.jpg" alt="envoyLogo" id="envoyLogo">
+                </a>
+                <figcaption>
+                  <a href="https://www.envoymarketing.in/" title="Envoy Marketing and Distributors" target="_blank">
+                    <h5>Envoy Marketing and Distributors</h5>
+                  </a>
+                  <p>Played a key role in the enhancement and maintenance of the Envoy Marketing and Distributors
+                    website, powered by ASP.NET and C#. Implemented critical updates and added new features to improve
+                    the overall functionality and user experience. Redesigned and optimized front-end interfaces using
+                    HTML, CSS, and JavaScript for a more modern and responsive look. Successfully revamped and
+                    maintained the Envoy Marketing and Distributors website, contributing to improved online presence
+                    and user engagement.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- experience section end here=============================== -->
+
+      <!-- project section end here=============================== -->
+      <section class="project" id="project">
+        <div class="wrapper">
+          <div class="projectHeading">
+            <h3>Project</h3>
+          </div>
+          <div class="projectDetails">
+            <div class="projectbuttons">
+              <button class="buttonValue" onclick="filterProject('all')">All</button>
+              <button class="buttonValue" onclick="filterProject('Company')">Company</button>
+              <button class="buttonValue" onclick="filterProject('Personal')">Personal</button>
+              <button class="buttonValue" onclick="filterProject('Client')">Client</button>
+            </div>
+            <div class="projectAll">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- project section end here=============================== -->
+
+      <!-- contact section start here=================== -->
+
+      <section class="contactMe" id="contactMe">
+        <div class="wrapper">
+          <div class="contactHeading">
+            <h3>Contact</h3>
+          </div>
+          <form class="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="number">Phone Number:</label>
+            <input type="number" id="number" name="number">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- contact section end here=================== -->
+
+    </main>
+
+    <!-- footer section start here========================== -->
+
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2024 Deepali Jaiswar</p>
+      </div>
+    </footer>
+
+
+    <!-- footer section end here========================== -->
+
+
+  </div>
+
+  <!-- javascript start here=============================== -->
+
+  <script src="./assests/js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!-- js slickslide here================================== -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./assests/slick/slick.min.js"></script>
+
+  <script>
+
+    // <!-- // experience section start here=========================== -->
+
+    $(document).ready(function () {
+      $('.infocastCompany').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500
+      });
+    });
+    // <!-- // experience section end here============================= -->
+
+
+    // contact section start here===================================
+
+    function sendEmail() {
+      const name = document.querySelector("#name").value;
+      const email = document.querySelector("#email").value;
+      const number = document.querySelector("#number").value;
+      const message = document.querySelector("#message").value;
+
+      let body = "Name: " + name + "<br/> Email: " + email + "<br/> Contact Number: " + number + "<br/> Message: " + message;
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "deepalijaiswar04@gmail.com",
+        Password: "9F826D9C3B37356C93C6848C8E90BCA2DE27",
+        To: 'deepalijaiswar04@gmail.com',
+        From: email,
+        Subject: "For Enquiry",
+        Body: body
+      }).then(
+        message => alert(message)
+      );
+    };
+
+    // contact section end here===================================
+
+  </script>
+
+
+</body>
+
+</html>

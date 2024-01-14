@@ -1,0 +1,539 @@
+/* universal here============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* wrapper start here============================== */
+.wrapper {
+  max-width: 1365px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* same tag here================================ */
+
+h1{
+  display: flex;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* main start here================================== */
+
+/* banner section start here=============================== */
+
+.banner {
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  background-position: bottom;
+}
+
+.banner .bannerText {
+  color: #fff;
+  /* line-height: 1.6; */
+  width: 60%;
+  font-weight: bold;
+}
+
+.banner .bannerText>span {
+  font-size: 20px;
+}
+
+.banner .bannerText h2 {
+  font-size: 50px;
+  padding: 20px 0;
+}
+
+.banner .bannerTextChange {
+  color: #ffff00;
+}
+
+.banner .bannerTextChange::after {
+  content: "Deepali Jaiswar";
+  animation: animate infinite 8s;
+
+}
+
+@keyframes animate {
+
+  0% {
+    content: "Deepali Jaiswar";
+    color: #006eee;
+  }
+
+  50% {
+    content: "Web Developer";
+    color: #ffff00;
+  }
+
+  75% {
+    content: "Deepali Jaiswar";
+    color: #006eee;
+  }
+}
+
+.banner .bannerText .bannerBtn {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner .bannerText a {
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  border-color: transparent;
+  background-color: #381111ee;
+}
+
+.banner .bannerText a:hover {
+  color: #381111ee;
+  background-color: #fff;
+}
+
+/* banner section end here=============================== */
+
+/* about me start here================== */
+.aboutMe,
+.education,
+.experience,
+.project,
+.contactMe {
+  text-align: -webkit-center;
+  padding: 70px 100px;
+  font-size: 30px;
+}
+
+.aboutMe h3,
+.education h3,
+.experience h3,
+.project h3,
+.contactMe h3 {
+  border-bottom: 3px solid #381111ee;
+  width: 20%;
+  margin-bottom: 20px;
+  color: #381111ee;
+}
+
+.aboutMe .aboutHeading p,
+.education .educationHeading p,
+.experience .experienceHeading p{
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.aboutMe .aboutDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMe .aboutDetails h4,
+.education .educationDetails h5,
+.infocastCompany figcaption h5  {
+  font-size: 25px !important;
+  border-bottom: 1px solid #381111ee;
+  color: #381111ee;
+}
+
+
+.aboutMe a {
+  color: #000;
+}
+
+.aboutMe a:hover{
+  color: #006eee;
+}
+
+#deepaliImage{
+  width: 150px;
+}
+
+.aboutMe .profileImage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutMe .aboutDetails .profile,
+.aboutMe .aboutDetails .skills {
+  text-align: start;
+  font-size: 15px;
+  line-height: 2;
+  width: 45%;
+  padding-top: 15px;
+}
+
+.aboutMe .skills label {
+  display: block;
+}
+
+.aboutMe .skills progress {
+  width: 100%;
+  text-align: end;
+}
+
+.aboutMe .skills progress::before {
+  content: attr(value)'%';
+  font-size: 10px;
+}
+
+.aboutMe .profile span {
+  font-weight: bold;
+}
+
+/* about me end here================== */
+
+/* education section start here============== */
+
+.education,
+.project{
+  background-color: #381111ee;
+  color: #fff !important;
+}
+
+.education h3,
+.project h3{
+  border-bottom: 3px solid #fff;
+  color: #fff !important;
+}
+
+.education .educationDetails h5,
+.infocastCompany figcaption h5  {
+  font-size: 20px !important;
+  margin-bottom: 20px;
+}
+
+.education .educationDetails{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 15px;
+
+}
+
+.education .educationDetails .school,
+.education .educationDetails .college,
+.education .educationDetails .degree,
+.education .educationDetails .course{
+  background-color: #fff !important;
+  width: 240px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.6;
+  border-radius: 10px;
+}
+
+.education .educationDetails span{
+  font-size: 15px;
+  color: #000;
+  display: block;
+}
+
+.education .educationDetails .institution{
+  font-weight: bold;
+  font-size: 18px !important;
+}
+.education .educationDetails .location{
+  font-size: 16px;
+}
+.education .educationDetails .location:before{
+  content: "\f041";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  padding-right: 5px;
+  color: #ff0000;
+}
+
+
+/* education section end here============== */
+
+/* experience section start here======================= */
+
+.experienceHeading p a{
+  color: #006eee;
+  font-style: italic;
+  font-weight: bold;
+}
+.experienceHeading p a:hover{
+  color: #381111ee;
+}
+
+.experienceDetails{
+  width: 60%;
+  height: 400px !important;
+}
+.experienceDetails .infocastCompany img{
+  width: 200px;
+}
+
+.experienceDetails .infocastCompany figure{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #381111ee;
+  margin: 20px 0;
+  padding: 10px 0;
+
+}
+
+.experienceDetails .infocastCompany figcaption{
+  text-align: start;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* .infocastCompany figcaption h5{
+  width: 95%;
+} */
+.infocastCompany figcaption p{
+  font-size: 15px;
+}
+/* experience section end here======================= */
+
+/* project section start here========================== */
+
+.projectDetails .projectbuttons button{
+  font-size: 20px;
+  padding: 5px 25px;
+  cursor: pointer;
+  background-color: #ddd;
+  border-color: transparent;
+  color: #381111ee;
+}
+
+.projectDetails .projectbuttons .buttonValue:hover,
+  .projectDetails .projectbuttons .buttonValue.active{
+  background-color: #fff;
+
+}
+.project .projectDetails .projectAll{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.projectDetails .card{
+  width: 300px;
+  margin: 10px 0;
+  border: 1px solid #381111ee;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.projectDetails .projectAll .projectImage{
+  background-color: #fff;
+}
+.projectDetails .projectAll img{
+  width: 100%;
+  border: 1px solid #381111ee;
+}
+
+.projectDetails .hide{
+  display: none;
+}
+
+.projectAll .projectContainer a{
+  display: block;
+  font-size: 15px !important;
+  background-color: #fff;
+  color: #381111ee;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #381111ee;
+
+}
+.projectAll .projectContainer a:hover{
+  border: 1px solid #fff;
+  background-color: #381111ee;
+  color: #fff;
+
+}
+/* project section end here========================== */
+
+/* contact section start here===================== */
+.contactMe .wrapper{
+  width: 70%;
+}
+
+.contactForm {
+  display: grid;
+  gap: 10px;
+  text-align: start;
+}
+
+.contactForm label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contactForm button {
+  background-color: #381111ee;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* contact section end here======================== */
+/* main end here================================== */
+
+/* footer start here============================== */
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  background-color: #381111ee;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* footer end here============================== */
+
+
+
+/* responsive start here==============================
+====================================================== */
+
+@media screen and (max-width: 1115px) {
+  .aboutMe,
+  .education,
+  .experience,
+  .project,
+  .contactMe{
+    padding: 70px 0;
+  }
+
+.experienceDetails {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  header #logo{
+    font-size: 20px;
+  }
+  header .wrapper nav {
+    width: 70%;
+}
+}
+
+@media screen and (max-width: 995px) {
+  .banner .bannerText {
+    width: 100%;
+}
+
+.aboutMe h3, .education h3, .experience h3, .project h3, .contactMe h3 {
+  width: 50%;
+}
+
+.aboutMe .aboutDetails{
+  display: block;
+}
+
+.aboutMe .aboutDetails .profile, .aboutMe .aboutDetails .skills {
+  width: 100%;
+}
+#deepaliImage {
+  width: 200px;
+  padding: 10px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+  .projectAll .projectContainer .project-name {
+    font-size: 10px !important;}
+
+}
+
+@media screen and (max-width: 683px) {
+
+  .experienceDetails{
+    height: 500px !important;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+
+  .experienceDetails{
+    height:700px !important;
+  }
+
+  .projectDetails .projectbuttons button{
+    margin:10px 5px;
+  }
+
+  .banner .bannerText a {
+    font-size: 10px;
+  }
+
+  .profileImage {
+    display: block !important;
+    text-align: center;
+  }
+
+  .experienceDetails .infocastCompany figure{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 424px) {
+
+  .experienceDetails{
+    height:800px !important;
+  }
+
+  .banner .bannerText .bannerBtn{
+    width: 100%;
+    display: grid;
+}
+
+.banner .bannerText .bannerBtn a{
+  margin: 10px;
+}
+
+
+
+
+h2 {
+  font-size: 30px !important;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .experienceDetails{
+    height:900px !important;
+  }
+
+  .banner .bannerText a {
+    display: inline-block !important;
+  }
+}
+
+/* responsive start here==============================
+====================================================== */
