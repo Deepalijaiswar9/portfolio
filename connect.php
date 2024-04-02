@@ -8,7 +8,7 @@ $mailheader = "From:".$name."<".$email.">\r\n";
 
 $recipient ="deepalijaiswar00@gmail.com";
 
-mail($recipient,$subject,$message,$mailheader)
+mail($recipient,$number,$message,$mailheader)
 or die("Error!");
 
 echo'
