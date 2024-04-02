@@ -288,18 +288,18 @@
           <div class="contactHeading">
             <h3>Contact</h3>
           </div>
-          <form class="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+          <form class="contactForm" action="connect.php" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" name="name" id="name" >
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" name="email" id="email" >
 
             <label for="number">Phone Number:</label>
-            <input type="number" id="number" name="number">
+            <input type="number" name="number" id="number" >
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <textarea name="message" id="message"  rows="4"></textarea>
 
             <button type="submit">Submit</button>
           </form>
@@ -328,61 +328,10 @@
 
   <script src="./assests/js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-
   <!-- js slickslide here================================== -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="./assests/slick/slick.min.js"></script>
-
-  <script>
-
-    // <!-- // experience section start here=========================== -->
-
-    $(document).ready(function () {
-      $('.infocastCompany').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        cssEase: 'linear',
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500
-      });
-    });
-    // <!-- // experience section end here============================= -->
-
-
-    // contact section start here===================================
-
-    function sendEmail() {
-      const name = document.querySelector("#name").value;
-      const email = document.querySelector("#email").value;
-      const number = document.querySelector("#number").value;
-      const message = document.querySelector("#message").value;
-
-      let body = "Name: " + name + "<br/> Email: " + email + "<br/> Contact Number: " + number + "<br/> Message: " + message;
-
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "deepalijaiswar04@gmail.com",
-        Password: "9F826D9C3B37356C93C6848C8E90BCA2DE27",
-        To: 'deepalijaiswar04@gmail.com',
-        From: email,
-        Subject: "For Enquiry",
-        Body: body
-      }).then(
-        message => alert(message)
-      );
-    };
-
-    // contact section end here===================================
-
-  </script>
-
-
 </body>
 
 </html>

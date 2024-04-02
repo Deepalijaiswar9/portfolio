@@ -33,7 +33,7 @@ li {
 /* banner section start here=============================== */
 
 .banner {
-  background-image: url("../images/banner.jpg");
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
@@ -91,17 +91,19 @@ li {
 }
 
 .banner .bannerText a {
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
-  color: #fff;
+  color: #000;
   border-color: transparent;
-  background-color: #381111ee;
+  border: 5px solid transparent;
+  background-color: #fff;
 }
 
 .banner .bannerText a:hover {
-  color: #381111ee;
-  background-color: #fff;
+  border: 5px solid yellow;
+
+
 }
 
 /* banner section end here=============================== */
@@ -122,10 +124,10 @@ li {
 .experience h3,
 .project h3,
 .contactMe h3 {
-  border-bottom: 3px solid #381111ee;
+  border-bottom: 3px solid #000;
   width: 20%;
   margin-bottom: 20px;
-  color: #381111ee;
+  color: #000;
 }
 
 .aboutMe .aboutHeading p,
@@ -144,8 +146,8 @@ li {
 .education .educationDetails h5,
 .infocastCompany figcaption h5  {
   font-size: 25px !important;
-  border-bottom: 1px solid #381111ee;
-  color: #381111ee;
+  border-bottom: 1px solid #000;
+  color: #000;
 }
 
 
@@ -200,7 +202,7 @@ li {
 
 .education,
 .project{
-  background-color: #381111ee;
+  background-color: #000;
   color: #fff !important;
 }
 
@@ -261,6 +263,10 @@ li {
 /* education section end here============== */
 
 /* experience section start here======================= */
+.experience{
+  padding: 0 !important;
+  margin: 70px 0 !important;
+}
 
 .experienceHeading p a{
   color: #006eee;
@@ -268,7 +274,7 @@ li {
   font-weight: bold;
 }
 .experienceHeading p a:hover{
-  color: #381111ee;
+  color: #000;
 }
 
 .experienceDetails{
@@ -283,7 +289,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #381111ee;
+  border: 1px solid #000;
   margin: 20px 0;
   padding: 10px 0;
 
@@ -311,7 +317,7 @@ li {
   cursor: pointer;
   background-color: #ddd;
   border-color: transparent;
-  color: #381111ee;
+  color: #000;
 }
 
 .projectDetails .projectbuttons .buttonValue:hover,
@@ -328,7 +334,7 @@ li {
 .projectDetails .card{
   width: 300px;
   margin: 10px 0;
-  border: 1px solid #381111ee;
+  border: 1px solid #000;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -338,7 +344,7 @@ li {
 }
 .projectDetails .projectAll img{
   width: 100%;
-  border: 1px solid #381111ee;
+  border: 1px solid #000;
 }
 
 .projectDetails .hide{
@@ -349,15 +355,15 @@ li {
   display: block;
   font-size: 15px !important;
   background-color: #fff;
-  color: #381111ee;
+  color: #000;
   padding: 10px;
   margin-top: 10px;
-  border: 1px solid #381111ee;
+  border: 1px solid #000;
 
 }
 .projectAll .projectContainer a:hover{
   border: 1px solid #fff;
-  background-color: #381111ee;
+  background-color: #000;
   color: #fff;
 
 }
@@ -387,7 +393,7 @@ li {
 }
 
 .contactForm button {
-  background-color: #381111ee;
+  background-color: #000;
   color: #fff;
   padding: 10px;
   border: none;
@@ -403,7 +409,7 @@ li {
 footer {
   text-align: center;
   font-weight: bold;
-  background-color: #381111ee;
+  background-color: #000;
   padding: 10px 0;
   color: #fff;
 }
